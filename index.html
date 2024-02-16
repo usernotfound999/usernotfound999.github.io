@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>《原神》春节礼包</title>
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,shrink-to-fit=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<!--em标准js代码，请放在页面的最上方，前面最好不要再有JS代码或JS文件-->
+<script type="text/javascript" src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/rem.js"></script>
+<script type="text/javascript" src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/vue.js"></script>
+<script type="text/javascript" src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/vant.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/vant.min.css">
+<style type="text/css">
+/*通用类*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0 auto;
+            font-size: 0.24rem;
+            font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Source Han Sans CN, sans-serif;
+            background: #fff;
+            text-align: justify;
+            color: #010000;
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 500;
+        }
+
+        img {
+            border: none;
+        }
+
+        a {
+            cursor: pointer;
+            color: #333;
+            text-decoration: none;
+            outline: none;
+        }
+
+        a:hover {
+            color: #006bb7;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        .lt {
+            float: left;
+        }
+
+        .rt {
+            float: right;
+        }
+
+        input.sub,
+        label {
+            border: none;
+            cursor: pointer;
+        }
+
+        input,
+        textarea {
+            font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Source Han Sans CN, sans-serif;
+            outline: none;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table td,
+        table th {
+            padding: 0;
+        }
+
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: #ccc;
+        }
+
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #ccc;
+        }
+
+        input:-moz-placeholder,
+        textarea:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #ccc;
+        }
+
+        input:-ms-input-placeholder,
+        textarea:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #ccc;
+        }
+
+        div.clear {
+            font: 0px Arial;
+            line-height: 0;
+            height: 0;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /*兼容老设备的rem-px基准*/
+        html {
+            font-size: 42.6667px;
+        }
+
+        @media screen and (max-width: 320px) {
+            html {
+                font-size: 42.6667px;
+            }
+        }
+
+        @media screen and (min-width: 321px) and (max-width: 360px) {
+            html {
+                font-size: 48px;
+            }
+        }
+
+        @media screen and (min-width: 361px) and (max-width: 375px) {
+            html {
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (min-width: 376px) and (max-width: 414px) {
+            html {
+                font-size: 55px;
+            }
+        }
+
+        @media screen and (min-width: 415px) and (max-width: 484px) {
+            html {
+                font-size: 64px;
+            }
+        }
+
+        @media screen and (min-width: 485px) and (max-width: 720px) {
+            html {
+                font-size: 96px;
+            }
+        }
+
+        @media screen and (min-width: 721px) and (max-width: 768px) {
+            html {
+                font-size: 102px;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1080px) {
+            html {
+                font-size: 144px;
+            }
+        }
+
+        @media screen and (min-width: 1080px) {
+            html {
+                font-size: 144px;
+            }
+        }
+
+        /*新设备的rem-vw标准*/
+
+
+        .wrapin {
+            background-color: #fdf2e1;
+            padding-bottom: 0.8rem;
+        }
+
+        header {
+
+            text-align: center;
+            font-size: 0.39rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            color: #E7506F;
+            background-color: #FBE9DB;
+        }
+
+        .pic img {
+            width: 100%;
+            display: block;
+            pointer-events:none;
+        }
+
+        ul.orm {
+            padding: 0.5rem 0.25rem 0.1rem;
+        }
+
+        /* 表单标题颜色 */
+        ul.orm li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* 表单标题颜色 */
+        ul li h3 {
+            color: #000000;
+            font-size: 0.32rem;
+            margin-bottom: 0.1rem;
+        }
+
+        ul.orm li h3 i {
+            color: #FA7D64;
+            font-style: normal;
+        }
+
+        ul.orm li h4 {
+            font-size: 0.28rem;
+            color: #7c6e6e;
+            font-weight: normal;
+            margin-bottom: 0.25rem;
+        }
+
+        ul.orm li input {
+            width: 100%;
+            height: 0.8rem;
+            font-size: 0.3rem;
+            padding-left: 0.6rem;
+            box-sizing: border-box;
+            background-position: left .1rem center !important;
+        }
+
+        ul.orm li .select {
+            width: 100%;
+            height: 0.8rem;
+            font-size: 0.3rem;
+            padding: 0 0.2rem;
+            box-sizing: border-box;
+            appearance: none;
+
+            -moz-appearance: none;
+
+            -webkit-appearance: none;
+            color: #000;
+            border: 1px solid #fff;
+
+            background: #fff url(https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/jiantou.png) no-repeat right 0.2rem center !important;
+
+            background-size: 0.25rem 0.3rem !important;
+        }
+
+        ul.orm li.select2 select {
+            width: 46%;
+            float: left;
+
+        }
+
+        ul.orm li.select2 select:nth-child(2) {
+            float: right;
+        }
+
+        ul.orm li.dan h4 {
+            margin-bottom: 0.25rem;
+        }
+
+        ul.orm li.dan input {
+            width: 0.4rem;
+            height: 0.4rem;
+            float: left;
+
+        }
+
+        ul.orm li.dan strong {
+            float: left;
+            font-size: 0.3rem;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            color: #fff;
+            font-style: normal;
+
+        }
+
+        form button {
+            width: 7rem;
+            height: 0.8rem;
+            background-color: #76675a;
+            margin: 0.2rem auto;
+            display: block;
+            border: none;
+            font-size: 0.36rem;
+            color: #ffffff;
+            border-radius: 0.2rem;
+            font-weight: bold;
+        }
+
+        .readonly {
+            background-color: #dfd9d9;
+            border: none;
+            color: #81889a;
+        }
+
+        .tanchu {
+            position: fixed;
+            top: 15%;
+            left: 50%;
+            width: 6rem;
+            height: 7rem;
+            background-color: #fdf2e1;
+            z-index: 2;
+            margin-left: -3rem;
+            border-radius: 0.2rem;
+            text-align: center;
+            padding-top: 0.5rem;
+            box-shadow: 0px 1px 14.56px 1.44px rgba(153, 153, 153, 0.2);
+        }
+
+        .tanchu img {
+            width: 2rem;
+        }
+
+        .tanchu h3 {
+            font-size: 0.5rem;
+            color: #fff;
+            margin: 0.3rem 0;
+            color: #000000;
+        }
+
+        .tanchu p {
+            font-size: 0.3rem;
+            color: #7c6e6e;
+        }
+
+        .tanchu a img {
+            margin-top: 0.8rem;
+            width: 0.8rem;
+        }
+
+        .shou input {
+            background: url(https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/shouji.png) no-repeat left;
+            background-size: 0.4rem 0.4rem;
+            border: none;
+            background-color: #fff;
+        }
+
+        .shou2 input {
+            background: url(https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/ks.png) no-repeat left;
+            background-size: 0.4rem 0.4rem;
+            border: none;
+            background-color: #fff;
+        }
+
+        .rbg {
+            background: #ffffff;
+            display: flex;
+            color: #333;
+            padding: 0 .2rem;
+            height: .85rem;
+            align-items: center;
+            font-size: .3rem;
+            font-weight: bold;
+        }
+
+        ul.orm li.dan .rbg strong {
+            color: #333;
+        }
+
+        .alert .van-dialog__message {
+            font-size: .3rem;
+            font-weight: bold;
+        }
+		.form{
+			position:relative;
+		}
+		
+		.form .submit{
+			position:absolute;
+			width:2.69rem;
+			height:0.9rem;
+			left:50%;
+			transform:translateX(-50%);
+			-webkit-transform:translateX(-50%);
+			bottom:6.3rem;
+			cursor:pointer;
+		}
+        .downbtn{
+			position:absolute;
+			width:2.79rem;
+			height:.69rem;
+			top:4.9rem;
+			left:2.42rem;
+		}
+    </style>
+</head>
+<body>
+<div id="app">
+<!--顶部-->
+<!--内容-->
+<div class="pic">
+<img src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/ys/8/2-10_01.jpg">
+<div class="form">
+<img src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/ys/8/2-10_02.jpg">
+<span class="submit" @click="receive"></span>
+</div>
+<img src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/ys/dy-nei.jpg"><!--二维码图片-->
+<img src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/ys/8/2-10_04.jpg">
+<img src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/ys/8/2-10_05.jpg">
+   <div class="pic">
+    <img src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/ys/lg.jpg">
+        </div>
+
+    <!--弹出-->
+<!--
+    <div class="tanchu" v-if="isPost">
+        <img src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/gou.png">
+        <h3>提交成功</h3>
+        <p>请晚上24点后或者第二天打开快手极速版即可百分之百领取成功!</p>
+        <br>
+        <div  @click="isPost=false"><img src="https://github.com/usernotfound999/usernotfound999.github.io/raw/master/yuanshen-js/chacha.png"></div>
+    </div>
+-->
+
+    <!--地区选择弹窗-->
+    <van-popup v-model="areaShow" position="bottom">
+        <van-picker
+                show-toolbar
+                :columns="areas"
+                confirm-button-text="确认"
+                cancel-button-text="取消"
+                @confirm="onAreaSelect"
+               @cancel="onAreaCancel"
+        />
+    </van-popup>
+
+    <!--省市选择弹窗-->
+    <van-popup v-model="cityShow" position="bottom">
+        <van-picker
+                show-toolbar
+                :columns="citys"
+                confirm-button-text="确认"
+                cancel-button-text="取消"
+                @confirm="onCitySelect"
+                @cancel="onCityCancel"
+        />
+    </van-popup>
+</div>
+<script>
+
+    const HOST = "https://shuju.nnsha.cn/mumu.php";
+
+    function Ajax(url, data, header = {}) {
+        if(!data){
+            data = {};
+        }
+        data['serial_number'] = "yuanshenhaidengjielibao";
+
+        return $.ajax({
+            url: url,
+            data: data,
+            headers: header,
+            type: 'post',
+            dataType: 'json',
+            async: true,
+            timeOut: 100000,
+            processData: true,
+            contentType: false,
+            xhrFields: {
+                withCredentials: true,
+            },
+            success: function (res) {
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown,) {
+                if (XMLHttpRequest.status === 429) {
+                    vant.Dialog({
+                        message: '请求过于频繁,请稍后再试',
+                        className: "alert",
+                        confirmButtonText: '确定'
+                    });
+                    return;
+                }
+                //	console.log(XMLHttpRequest.status )
+                vant.Dialog({
+                    message: '连接失败,请检查网络是否异常',
+                    className: "alert",
+                    confirmButtonText: '确定'
+                });
+            },
+        })
+    }
+
+    var app = new Vue({
+        el: "#app",
+        data() {
+            return {
+                phone: "",
+                area: "",
+                areaShow: false,
+                areas: [
+                    {text: '杭州', value: '杭州'},
+                    {text: '宁波', value: '宁波'},
+                    {text: '温州', value: '温州'},
+                    {text: '绍兴', value: '绍兴'},
+                    {text: '湖州', value: '湖州'},
+                ],
+                city: "",
+                cityShow: false,
+                citys: [
+                    {
+                        text: '电信区',
+                        value: '电信区',
+                        children: [
+                            {
+                                text: '艾欧尼亚',
+                                value: '艾欧尼亚',
+                            },
+                            {
+                                text: '祖安',
+                                value: '祖安',
+                            },
+                        ],
+                    },
+                    {
+                        text: '网通区',
+                        value: '网通区',
+                        children: [
+                            {
+                                text: '比尔吉沃特',
+                                value: '比尔吉沃特',
+                            },
+                            {
+                                text: '德玛西亚',
+                                value: '德玛西亚',
+                            },
+                        ],
+                    },
+                    {
+                        text: '其他区服',
+                        value: '其他区服',
+                        children: [
+                            {
+                                text: '教育网专区',
+                                value: '教育网专区',
+                            },
+                            {
+                                text: '男爵领域',
+                                value: '男爵领域',
+                            },
+                        ],
+                    }
+                ],
+                radisoCheck: '1',
+                isPost: false,
+            }
+        },
+        methods: {
+            onAreaSelect(item) {
+                this.area = item.value;
+                this.areaShow = false;
+            },
+            onAreaCancel() {
+                this.areaShow = false;
+            },
+            onCitySelect(item) {
+                this.city = item[0] + item[1];
+                this.cityShow = false;
+            },
+            onCityCancel() {
+                this.cityShow = false;
+            },
+			receive(){
+                Ajax(HOST, {
+                    'route_name' : 'check_receive'
+                }).then(res => {
+                    if (res.code == 0){
+                        vant.Dialog({message: '审核中，留意短信通知...', className: "alert", confirmButtonText: '确定'});
+                    }else if (res.code == -1){
+                        vant.Dialog({message: '请完成下列任务后再领取', className: "alert", confirmButtonText: '确定'});
+                    }else{
+                        vant.Dialog({message: '请完成下列任务后再领取', className: "alert", confirmButtonText: '确定'});
+                    }
+                })
+
+			},
+            post() {
+                if (!/^1[3456789]\d{9}$/.test(this.phone)) {
+                    vant.Dialog({message: '请输入有效的手机号码', className: "alert", confirmButtonText: '确定'});
+                    return false;
+                }
+                Ajax(HOST, {
+                    'phone' : this.phone
+                }).then(res => {
+                    if (res.code != 0){
+                        vant.Dialog({message: res.msg, className: "alert", confirmButtonText: '确定'});
+                        return;
+                    }
+                    this.isPost = true;
+                })
+
+            }
+        },
+        mounted() {
+
+        }
+    });
+</script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3EqTS0mdzWW0cWKU",ck:"3EqTS0mdzWW0cWKU"})</script>
+</body>
+</html>
