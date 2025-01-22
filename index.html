@@ -1,54 +1,65 @@
-<!DOCTYPE html>
 <html>
-<head>
-
-<style>
-    .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-</style>
-
-<meta charset="utf-8">
-<title>UserNotFound's Page</title>
-</head>
-<body style="background-color: black;">
-    <div class="container">
-        <h1 style="text-align: center; color: white;">UserNotFound's Page</h1>
-        <p style="text-align: center; color: white;">
-            <a href="https://usernotfound999.github.io/index_cn.html">
-            中文版
+    <head>
+        <meta charset="utf-8">
+        <title>个人博客-首页</title>
+        <style>
+            /* 居中模板 */
+            .center {
+                text-align: center;
+            }
+            /* 左起模板 */
+            .left {
+                text-align: left;
+            }
+            /* 右起模板 */
+            .right {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 个人介绍顶栏 -->
+        <div class="center">
+            <!-- 个人头像
+             todo 跳转github -->
+                <img src="images/UserNotFound.png" alt="UserNotFound">
+            <p>UserNotFound</p>
+            <!-- 邮件地址，因为好像没有用所以把邮件加上QWQ
+             todo 跳转至发邮件页面 -->
+            <ahref="k26asdc@outlook.com>邮件:k26asdc@outlook.com</ahref>
+            <p>此网站为我的个人博客，说是博客也没啥可看的lol</p>
+            <hr />
+            <!-- 按时间排序，越往上越新 -->
+            
+            <!-- 测试
+             最旧，所有文章都应当在此文章的上方，越向上越新 -->
+            <a href="blogs/19700101-01.html">
+                <!-- 想在左侧加上封面，不会做先注释
+                 todo 在左侧加上封面 -->
+                <!-- <div class="left">    
+                    <img src="images/blogs/19700101-01.png">
+                </div> -->
+                <div class="left">
+                    <h3>测试</h3>
+                    <p>测试</p>
+                    <div class="right">
+                        <h5>日期:1970年1月1日</h5>
+                    </div>
+                </div>
             </a>
-        </p>
-</div>
+            <hr />
 
-<!--
-    <img src="/assets/down.png" alt="Scoll down, please" style="text-align: center; color: white;">
--->
-
-    <p style="text-align: center; height: 100vh; color: white;">
-        Hi, there. I'm UserNotFound, a begginer.<br>
-        I'm coding because I love it.<br>
-        My favourite code language is Kotlin, because I think it is humanity.<br>
-    </p>
-
-    <h1 style="display: flex; justify-content: center; align-items: center; height: 25vh; color: white;">
-        My Projects
-    </h1>
-
-    <p style="text-align: center; height: 100vh; color: white;">
-        It's nothing there :(
-    </p>
-
-<!--
-    <p>
-        <a href="https://github.com/usernotfound999/placeHolder">
-        <img src="/assets/placeHolder.png" alt="placeHolder" width="32" height="32">
-    </a>
-    </p>
--->
-
-</body>
+            <!-- 主页文章模板 -->
+            <!-- <a href="blogs/yyyymmdd-nn.html">
+                <div class="left">
+                    <h3>标题示例</h3>
+                    <p>小标题示例</p>
+                    <div class="right">
+                        <h5>日期:yyyy年m月d日</h5>
+                    </div>
+                </div>
+            </a>
+            <hr /> -->
+        </div>
+    </body>
 </html>
