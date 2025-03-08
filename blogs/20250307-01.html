@@ -50,7 +50,7 @@
          2.修改splash <br />
          (1)测试opsplash可用 <br />
          输入 ./opsplash 回车，输出应当有opsplash的用法 <br />
-         <div class="center"> <img src="/image/20250307-01-03.png" height="55%" width="auto"/> <br /> </div>
+         <div class="center"> <img src="/image/20250307-01-03.png" height="55%" width="55%"/> <br /> </div>
          (2)把splash分区镜像放置到termux，home文件夹 <br />
          前往mt管理器，给予root权限 <br />
          点击下上边的/storage/emulated/0/ <br />
@@ -62,7 +62,7 @@
          (4)处理图片 <br />
          用mt管理器查看，发现刚刚的文件夹里出现了许多文件，点击pic文件夹，点击boot.bmp <br />
         查看照片尺寸 <br />
-        <div class="center"> <img src="/image/20250307-01-02.png" height="55%" width="auto" /> <br /> </div>
+        <div class="center"> <img src="/image/20250307-01-02.png" height="55%" width="55%" /> <br /> </div>
         用工具将你准备好的照片裁剪/缩小至刚刚的分辨率 <br />
         用mt管理器将改好尺寸的图片复制到/data/data/com.termux/files/home/内，并重命名为input(文件后缀不要修改!!!!) <br />
         回到termux，输入 convert 你刚刚裁好尺寸的图片 -type truecolor -depth 24 output.bmp 回车 <br />
