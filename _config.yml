@@ -31,7 +31,7 @@ more_vert:
     name: Deltarune Chapter 1&2&3&4
     link: https://www.youtube.com/watch?v=7ggQthXpmos
 
-disqus: true
+disqus: false
 disqus_shortname: 'usernotfound999'
 
 # Build settings
