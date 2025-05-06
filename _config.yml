@@ -1,19 +1,19 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: UserNotFound's Blog
+email: IDontWannaShow@This.yet
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-facebook_username: jekyll
-google_play: 'GDGX'
-google_plus_com: '109485346959707049693'  # Community link
-google_plus_per: '+GDGManagua'  #Personal link
-facebook_app_id: 12345
+url: "https://mighttt.dpdns.org" # the base hostname & protocol for your site
+twitter_username: no
+github_username:  usernotfound999
+facebook_username: no
+google_play: 'no'
+google_plus_com: 'no'  # Community link
+google_plus_per: 'no'  #Personal link
+facebook_app_id: no
 
 # Layout settings
 header_type: default  # values [ drawer, default ]
@@ -22,17 +22,17 @@ pagination_type: default  # values [ ops, default ]
 
 more_vert:
   option1:
-    name: Cool Option 1
-    link: www.myawesomelink.com
+    name: Rickroll
+    link: https://m.youtube.com/watch?v=dQw4w9WgXcQ
   option2:
-    name: Cool Option 2
-    link: www.myawesomelink.com
+    name: Half-Life 3 Free Download
+    link: https://m.youtube.com/watch?v=o59I9kB_Ei8
   option3:
-    name: Cool Option 3
-    link: www.myawesomelink.com
+    name: Deltarune Chapter 1&2&3&4
+    link: https://www.youtube.com/watch?v=7ggQthXpmos
 
 disqus: true
-disqus_shortname: 'gdgmanagua'
+disqus_shortname: 'usernotfound999'
 
 # Build settings
 markdown: kramdown
