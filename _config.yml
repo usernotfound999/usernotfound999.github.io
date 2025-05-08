@@ -22,8 +22,8 @@ pagination_type: default  # values [ ops, default ]
 
 more_vert:
   option1:
-    name: Rickroll
-    link: https://m.youtube.com/watch?v=dQw4w9WgXcQ
+    name: Home Page
+    link: https://mighttt.dpdns.org/
   option2:
     name: Half-Life 3 Free Download
     link: https://m.youtube.com/watch?v=o59I9kB_Ei8
